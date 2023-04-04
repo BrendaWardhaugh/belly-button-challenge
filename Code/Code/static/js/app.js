@@ -266,47 +266,6 @@ function buildGaugeChart(sample) {
  };
  
 
-// var data = [
-//     {
-//       domain: { x: [0, 1], y: [0, 1] },
-//       value: frequency,
-//       title: { text: "Speed" },
-//       type: "indicator",
-//       mode: "gauge+number",
-//       gauge: {
-//         axis: { range: [null, 9] },
-//         steps: [
-//           { range: [0, 1], color: "#F8F3EC" },
-//           { range: [1, 2], color: "#F4F1E4" },
-//           { range: [2, 3], color: "#E9E7C9" },
-//           { range: [3, 4], color: "#E5E8B0" },
-//           { range: [4, 5], color: "#D5E599" },
-//           { range: [5, 6], color: "#B7CD8F" },
-//           { range: [6, 7], color: "#8BC086" },
-//           { range: [7, 8], color: "#89BC8D" },
-//           { range: [8, 9], color: "#84B589" }
-//         ],
-//       }
-//     }
-//   ];
-
-//   var layout = {shapes:[{
-//     type: 'path',
-//     path: gaugePointer(frequency),
-//     fillcolor: '850000',
-//     line: {
-//       color: '850000'
-//     }
-//   }],
-// //title: '<b>Gauge</b> <br> Speed 0-100',
-//   autosize:true,
-// //height: 1000,
-// //width: 1000,
-// xaxis: {zeroline:false, showticklabels:false,
-//            showgrid: false, range: [-1, 1]},
-// yaxis: {zeroline:false, showticklabels:false,
-//            showgrid: false, range: [-1, 1]}
-//   };
   Plotly.newPlot('gauge', data, layout);
 });
 };
